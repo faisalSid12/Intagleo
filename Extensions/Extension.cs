@@ -1,5 +1,5 @@
-﻿using Intagleo.Repository.Courses;
-using Intagleo.Repository.Students;
+﻿
+using Intagleo.Repository.Users;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -12,10 +12,7 @@ namespace Intagleo.Extensions
     {
         public static void ConfigureRepositoryWrapper(this IServiceCollection services)
         {
-            services.AddTransient<StudentRepository>();
-            services.AddTransient<CourseRepository>();
-            /*            
-                        services.AddTransient<CustomerRepository>();*/
+            services.AddTransient<UserRepository>();
         }
     }
 }

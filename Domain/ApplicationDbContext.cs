@@ -9,10 +9,10 @@ namespace Intagleo.Domain
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Course> Courses { get; set; }
+       
+        public DbSet<User> Users { get; set; }
 
-     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
 
